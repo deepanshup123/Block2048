@@ -4,11 +4,11 @@ let container = document.getElementById("container");
 let lose_text = document.getElementById('lose');
 
 let box_tiles = [
-    [2, 4, 16, 64, 32],
-    [8, 2, 1024, 2048, 8],
-    [32, 8, 16, 4, 2],
-    [256, 64, 512, 128, 32],
-    [2048, 256, 1024, 2, 8]
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0]
 ]
 
 function Tiles_Main(){

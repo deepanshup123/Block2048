@@ -4,11 +4,11 @@ let container = document.getElementById("container");
 let lose_text = document.getElementById('lose');
 
 let box_tiles = [
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0]
+    [2, 4, 16, 64, 32],
+    [8, 2, 1024, 2048, 8],
+    [32, 8, 16, 4, 2],
+    [256, 64, 512, 128, 32],
+    [2048, 256, 1024, 2, 8]
 ]
 
 function Tiles_Main(){
@@ -161,12 +161,13 @@ function Add_zero_reverse(){
             }
             
         }
+
     }
     
     let max = generate_places.length;
     let random = Math.floor(Math.random() * max);
     let received_position = generate_places[random];
-    result[received_position[1]][received_position[0]] = 2;
+    result[received_position[0]][received_position[1]] = 2;
     max;
     random;
     received_position;
